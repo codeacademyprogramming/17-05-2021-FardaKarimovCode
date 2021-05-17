@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+      </head>
+<body>
+    <a href="#" id="close" style="display:none;text-decoration: none;" onclick="quit()"> &times;</a>
+<form>
+    <label> Search Customer Name: </label>
+    <input id="myInput" onkeyup="Search()" type="text" placeholder="Search...">
+
+</form>
+
+    <div id="hovered">
+       <table>
+       <thead>
+           <tr>
+            <th> Customer Image</th>
+
+               <th> Name </th>
+               <th> Surname </th>
+               <th> Monthly Salary</th>
+               <th> Active Loans Status </th>
+               <th> Total Monthly Payment</th>
+               <th> Availibility to apply for loan</th>
+               <th> Loan History</th>
+
+           </tr>
+       </thead>
+       <tbody id="tableBody">
+      
+    </tbody>
+   </table> 
+  
+   </div>
+   <div class="languages">
+    <a href="#"> AZ/</a>
+    <a href="#"> EN/</a>
+    <a href="#"> RU</a>
+
+</div>
+   <div id="modal">
+    <table>
+        <caption> Customer's Previous Loans</caption>
+        <thead>
+            <tr>
+                <th> Loaner</th>
+                <th> Amount</th>
+                <th> Is Closed loan</th>
+                <th> Monthly payment </th>
+                <th> Due amount</th>
+                <th> Start Dates</th>
+                <th> End Dates</th>
+            </tr>
+        </thead>
+        <tbody id="modal-body">
+       
+
+        </tbody>
+    </table> 
+</div> 
+<script src="app.js"></script>
+
+</body>
+</html>
